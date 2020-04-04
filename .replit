@@ -1,0 +1,2 @@
+language = "ruby"
+run = "echo 'You must specify which file you want to run! Run one with `ruby <name-of-the-file>`'"
