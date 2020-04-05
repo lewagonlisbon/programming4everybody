@@ -69,7 +69,7 @@ Follow the lesson on your editor and play around in the [`test`](./test) folder.
 After each session, you can get the latest updates with:
 
 ```sh
-git pull upstream master
+git pull -f upstream master
 ```
 
 ## General overview
