@@ -12,11 +12,11 @@ You will also find a [`test`](./test) folder in your repository. **Don't edit or
 
 ## Setup
 
-**N.B:** This is an online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps, please **[stick to a REPL](#repl)**. Do you want to configure your computer like a pro? [Learn how to do it with us](#going-further)!
+**IMPORTANT:** This is an online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps (you don't know Git, Ruby, what a terminal is or any of the tools we are using), please **[stick to a REPL](#repl)**! Do you want to configure your computer like a pro? [Learn how to do it with us](#going-further)!
 
 ### REPL
 
-If you decded to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), you can [create an account on Repl.it](https://repl.it/signup) (you can also use your GitHub to sign up).
+If you decided to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), you can [create an account on Repl.it](https://repl.it/signup) (you can also use your GitHub to sign up).
 
 Once you are logged in, click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody) and select `fork` to save a copy of this repository in your personal REPLs collection.
 
@@ -59,9 +59,9 @@ cd programming4everybody
 git remote add upstream https://github.com/lewagonlisbon/programming4everybody.git
 
 # Open the repository with your favourite editor:
-atom . # Atom
-subl . # Sublime Text
-code . # Visual Studio Code
+atom . # or `open -a Atom .`
+subl . # or `open -a "Sublime Text" .`
+code . # or `open -a "Visual Studio Code" .`
 ```
 
 Follow the lesson on your editor and play around in the `test` folder.
