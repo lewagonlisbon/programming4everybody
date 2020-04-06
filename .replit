@@ -1,3 +1,3 @@
 # DON'T EDIT OR REMOVE THIS FILE
 language = "ruby"
-run = "echo You must specify a file. Run a ruby file with 'ruby <filename>'"
+run = "echo You must specify a file. Run a ruby file with \'ruby <filename>\'"

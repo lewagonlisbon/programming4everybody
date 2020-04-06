@@ -12,13 +12,13 @@ You will also find a [`test`](./test) folder in your repository. **Don't edit or
 
 ## Setup
 
-**IMPORTANT:** This is an online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps (you don't know Git, Ruby, what a terminal is or any of the tools we are using), please **[stick to a REPL](#repl)**! Do you want to configure your computer like a pro? [Learn how to do it with us](#going-further)!
+**IMPORTANT:** This is an online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps (you don't know Git, Ruby, what a terminal is, or any of the tools we are using), please **[stick to a REPL](#repl)**! Do you want to configure your computer like a pro? [Learn how to do it with us](#going-further)!
 
 ### REPL
 
 If you decided to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), you can [create an account on Repl.it](https://repl.it/signup) (you can also use your GitHub to sign up).
 
-Once you are logged in, click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody) and select `fork` to save a copy of this repository in your personal REPLs collection.
+Once you are logged in, click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody) and, if it doesn't happen automatically, click `fork` to save a copy of this repository in your personal REPLs collection.
 
 ![](images/repl1.png)
 
@@ -32,7 +32,13 @@ After a session ends, switch to the `Version Control` tab and click `Pull` to ge
 
 ### Git and Ruby
 
-If you already have a GitHub profile, [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Ruby](https://www.ruby-lang.org/en/documentation/installation) installed, you can fork the repository and fetch the new updates after each session.
+**ONLY** if you already have:
+
+- a GitHub profile
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed (type `git --version` in your terminal, it should be >= 1.7)
+- [Ruby](https://www.ruby-lang.org/en/documentation/installation) installed (`ruby --version` should be >= 2.2)
+
+you can fork this repository on your computer and fetch the new updates after each session.
 
 First, fork this repository to your profile.
 
@@ -44,11 +50,7 @@ Open your terminal and run the following commands one at a time (always read the
 # TODO: change with your github username
 GITHUB_USERNAME="gabrielecanepa"
 
-# Check git and ruby version:
-git --version # should be >= 1.7
-ruby --version # should be >= 2.2
-
-# Create a new folder to keep your personal projects:
+# Create a new folder where to keep your personal projects:
 [ ! -d ~/code ] && mkdir ~/code
 [ ! -d ~/code/$GITHUB_USERNAME ] && mkdir ~/code/$GITHUB_USERNAME
 cd ~/code/$GITHUB_USERNAME
@@ -95,7 +97,7 @@ Our program has 10 lessons, following [Codecademy’s free Ruby track](https://w
 
 For each session, a private link to the Zoom meeting will be shared on the Slack main channel before the beginning of the lesson.
 
-**N.B:** to make the lecture as interactive as possible, we ask you to share your screen with the rest of the class for **no more than 2 minutes** per session, excluding the initial presentation 🙋🏼‍♀️🙋🏽‍♂️.
+**N.B:** to make the lecture as interactive as possible, we ask you to share your screen with the rest of the participants for **no more than 2 minutes** per session, excluding any extra presentation 🙋🏼‍♀️🙋🏽‍♂️.
 The Zoom meetings and Slack workspace are **private**, and only authorised participants can access them.
 
 ## Going further
@@ -104,6 +106,6 @@ Can't wait to know more about programming? **[Apply to Le Wagon](http://www.lewa
 
 By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our bootcamp manager](https://meetings.hubspot.com/fernando-jardim1).
 
-You can also follow us on [Facebook](https://www.facebook.com/lewagonlisbon), [Instagram](https://www.instagram.com/lewagonlisbon), [Meetup](https://www.meetup.com/Le-Wagon-Lisbon-Coding-Station), and get involved with our amazing community 😍
+You can also follow us on [Facebook](https://www.facebook.com/lewagonlisbon), [Instagram](https://www.instagram.com/lewagonlisbon), [Meetup](https://www.meetup.com/Le-Wagon-Lisbon-Coding-Station), and get involved with our amazing community 🤩
 
 ![](images/lisbon.jpg)
