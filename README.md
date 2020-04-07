@@ -8,7 +8,7 @@ Please star the repository, or just bookmark the page in your favourite browser.
 
 Each file you see in this repository will be filled by a teacher during the corresponding session.
 
-You will also find a [`test`](./test) folder in your repository. **Don't edit or delete any file outside this folder**: it's always important to keep your personal experiments in a separate place! 🧪
+You will also find a [`test`](./test) folder in your repository. **Don't edit or delete any file outside this folder**: it's important to always keep your personal experiments in a separate place! 🧪
 
 ## Setup
 
@@ -18,11 +18,11 @@ You will also find a [`test`](./test) folder in your repository. **Don't edit or
 
 If you decided to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), you can [create an account on Repl.it](https://repl.it/signup) (you can also use your GitHub to sign up).
 
-Once you are logged in, click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody) and, if it doesn't happen automatically, click `fork` to save a copy of this repository in your personal REPLs collection.
+Once you are logged in, click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody) and, if nothing happens automatically, click `fork` to save a copy of this repository in your personal REPLs collection.
 
 ![](images/repl1.png)
 
-Now click on the file `README.md` to open it, and... wait a second, it's me! 🤖
+Now click on the file `README.md` to open it, and... wait a second, that's me! 🤖
 
 ![](images/repl2.png)
 
@@ -35,7 +35,7 @@ After a session ends, switch to the `Version Control` tab and click `Pull` to ge
 **ONLY** if you already have:
 
 - a GitHub profile
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed (type `git --version` in your terminal, it should be >= 1.7)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed (type `git --version` in your terminal, it should give you a version >= 1.7)
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation) installed (`ruby --version` should be >= 2.2)
 
 you can fork this repository on your computer and fetch the new updates after each session.
@@ -91,18 +91,18 @@ Our program has 10 lessons, following [Codecademy’s free Ruby track](https://w
 
 ## Typical session
 
-- _13h00-13h25 (GMT+1)_ **Live session** on [Zoom](https://zoom.us/signup) with Le Wagon's teachers showing lots of live-demos to help you understand the concepts using practical examples
-- _13h25-13h45 (GMT+1)_ **Q&A session** where you'll be able to ask the teachers any question you might have and share your screen with them for a live help
+- _13h00-13h25_ (GMT+1) **Live session** on [Zoom](https://zoom.us/signup) with Le Wagon's teachers showing lots of live-demos to help you understand the concepts using practical examples
+- _13h25-13h45_ (GMT+1) **Q&A session** where you'll be able to ask the teachers any question you might have and share your screen with them for a live help
 - _13h45-?_ **Keep coding!** Use the [Slack channel](https://programming4everybody.slack.com) to find a buddy and work with him, interact with other classmates, or just send a funny gif 🙈
 
 For each session, a private link to the Zoom meeting will be shared on the Slack main channel before the beginning of the lesson.
 
-**N.B:** to make the lecture as interactive as possible, we ask you to share your screen with the rest of the participants for **no more than 2 minutes** per session, excluding any extra presentation 🙋🏼‍♀️🙋🏽‍♂️.
+**N.B:** to make the lecture as interactive as possible, we ask you to share your screen with the rest of the participants for **no more than 2 minutes** per session, excluding any extra presentation 🙋🏼‍♀️🙋🏽‍♂️
 The Zoom meetings and Slack workspace are **private**, and only authorised participants can access them.
 
 ## Going further
 
-Can't wait to know more about programming? **[Apply to Le Wagon](http://www.lewagon.com/lisbon/apply)** and learn how to build the app of your dreams with us!
+Can't wait to know more about programming? **[Apply to Le Wagon](http://www.lewagon.com/lisbon/apply)** and learn how to build the app of your dreams with us 🚀
 
 By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our bootcamp manager](https://meetings.hubspot.com/fernando-jardim1).
 
