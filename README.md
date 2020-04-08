@@ -15,7 +15,7 @@ You will also find a [`test`](./test) folder in your repository. **Don't edit or
 
 ## Setup
 
-**N.B:** This is an online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps (you don't know Git, Ruby, what a terminal is, or any of the tools we are using), please [just watch the video](./#welcome) or [use a REPL](./#repl)! Do you want to learn how to configure your computer like a pro? [Do it with us](#going-further)!
+**N.B:** This is an online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps (you don't know Git, Ruby, what a terminal is, or any of the tools we are using), please [just watch the video](#welcome) or [use a REPL](#repl)! Do you want to learn how to configure your computer like a pro? [Do it with us](#going-further)!
 
 ### REPL
 
