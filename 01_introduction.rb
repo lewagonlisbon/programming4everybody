@@ -7,11 +7,12 @@
 
 # Let's see it in action!
 
-# Puts/print
+# *PUTS/PRINT*
 puts "--- Programming for everybody ---"
 print "Welcome to Le Wagon, "
 puts "this is the first lesson of the course"
 
+# *DATATYPES*
 puts "---"
 puts "1. *Data types*:"
 puts 'Hello from Ruby!'.class # String
@@ -21,34 +22,38 @@ puts true.class # TrueClass (boolean)
 puts false.class # FalseClass (boolean)
 puts nil.class # NilClass (no content, not yet assigned!)
 
-# Quickly:
-# 1. Strings to describe text
-# 2. Integers and floats for numbers
-# 3. Booleans for conditions
-# 4. Nil if there is nothing, is not assigned
-# + many more!
+# In general:
+# 1. strings to describe text
+# 2. integers and floats describe numbers
+# 3. booleans describe conditions (true/false)
+# 4. nil describes an empty value, not yet assigned
+# + many many more!
+# These are the basic data types (bricks), and with them you can build any class you want!
+# An example is the CSV class, to read/write from/to spreadsheets
 
 # Collections:
-array = ["a string", 1, "another string", true, nil, []]
+# Put different data together with collections (arrays and hashes)!
+array = ["a string", 2.99, "another string", true, nil, 1, [], "This array can collect any data, wow!", {}]
 puts array.class
-# To find an element I must know the index (position - 1)!
-# Print the third element (I MUST know the order!):
-puts array[2]
+# To find an element inside the array, I must know its position (called index in programming)!
+# Print the third element (always use `position - 1`, because the index starts at 0):
+puts array[2] # => "another string"
 
 hash = {
-  key: "value",
-  string: "a string",
-  boolean: true
+  key: "a string",
+  another_key: 2.99,
+  another_key_with_the_name_i_want: "another string"
 }
 puts hash.class
-# To print the third element (this time I have a key!):
-puts hash[:boolean]
+# In an hash I have a *key* labeling the element of the collection!
+# To print the third element (this time with the key):
+puts hash[:another_key_with_the_name_i_want] # => "another string"
 
+# *MATH*
 puts "---"
 puts "2. **Math**"
 print "Number? "
-number = gets.chomp # don't chain other methods here!
-number = number.to_i
+number = gets.chomp.to_i # `gets.chomp` = get an input from the user; `.to_i` = make it a number (by default is a string/text)
 puts "#{number} by 3 is #{number * 3}!"
 print "Exponent? "
 exponent = gets.chomp.to_i
@@ -62,8 +67,9 @@ print "String to multiply by #{number}? "
 string_to_multiply = gets.chomp
 puts string_to_multiply * number # you can also do math with strings!
 
+# *BUILT-IN METHODS*
 puts "---"
-puts "3. *Built-in methods*" # check the docs here -> https://devdocs.io and select Ruby
+puts "3. *Built-in methods*" # check the docs on ruby-doc.org, or use devdocs.io and select the ruby documentation
 # Strings
 print "A cool word? "
 word = gets.chomp
@@ -73,4 +79,4 @@ puts "If we reverse and make it all upcase, we get #{word.reverse.upcase}"
 print "What's your favorite number? "
 number = gets.chomp.to_i
 puts "Is #{number} odd? #{number.odd?}"
-puts "#{number.to_f} is more precise though!" # to_f = to float (decimal)!
+puts "#{number.to_f} is more precise though!" # to_f = to float!
