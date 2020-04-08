@@ -66,11 +66,13 @@ subl . # or `open -a "Sublime Text" .`
 code . # or `open -a "Visual Studio Code" .`
 ```
 
-Follow the lesson on your editor and play around in the [`test`](./test) folder.
+Follow the lesson in your editor and play around in the [`test`](./test) folder.
 
-> **Bonus**: if you use [Atom](https://atom.io), you can install the [Teletype package](https://teletype.atom.io) from your settings, and interact with our code during a live session! 🤓
+> **Bonus**: if you use [Atom](https://atom.io), you can install the [Teletype package](https://teletype.atom.io/) and interact with our code during a live session! 🤓
+>
+> ![](https://blog.atom.io/img/posts/teletype/code-together.gif)
 
-After each session, you can get the latest updates with:
+After each session, get the latest updates with:
 
 ```sh
 git pull -f upstream master
