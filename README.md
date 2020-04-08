@@ -4,6 +4,9 @@ This repository contains all the files you'll see during the live sessions of th
 
 Please star the repository, or just bookmark the page in your favourite browser.
 
+**IMPORTANT**: every tool you see during a live session is **extra**, **free to use**, and __**OPTIONAL**__. These applications are used by thousands of startups around the world (including Le Wagon), and we'll do the same just to show you how to work in a real developer environment.
+If you don’t have any prior experience, or you don’t even know how to use an online REPL, please just watch the video session, ask your questions at the end of the lesson, and don’t do anything else described here. As explained during the program presentation, this course is just an extension of the [Codecademy Ruby track](https://www.codecademy.com/learn/learn-ruby), and you are not required to do anything more than following the meetings!
+
 ## Usage
 
 Each file you see in this repository will be filled by a teacher during the corresponding session.
@@ -12,13 +15,11 @@ You will also find a [`test`](./test) folder in your repository. **Don't edit or
 
 ## Setup
 
-**IMPORTANT:** This is a free online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps (you don't know Git, Ruby, what a terminal is, or any of the tools we are using), please **[stick to a REPL](#repl)**! Do you want to configure your computer like a pro? [Learn how to do it with us](#going-further)!
+**N.B:** This is an online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps (you don't know Git, Ruby, what a terminal is, or any of the tools we are using), please [just watch the video](./#welcome) or [use a REPL](./#repl)! Do you want to learn how to configure your computer like a pro? [Do it with us](#going-further)!
 
 ### REPL
 
-If you decided to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), you can [create an account on Repl.it](https://repl.it/signup) (you can also use your GitHub to sign up).
-
-Once you are logged in, click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody) to save a copy of this repository in your personal REPLs collection.
+If you want, you can use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) to interact with the code we share every lesson. [Create an account on Repl.it](https://repl.it/signup), and, once logged in, click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody) to save a copy of this repository in your personal REPLs collection.
 
 Now click on the file `README.md` to open it, and... wait a second, that's me! 🤖
 
@@ -28,7 +29,7 @@ After a session ends, switch to the `Version Control` tab and click `Pull` to ge
 
 ![](https://github.com/lewagonlisbon/programming4everybody/raw/master/images/repl2.png)
 
-> **NOTE:** if the pull command doesn't work, it means you have edited some files you shouldn't have 🛑 Check which ones under `Changed files or folders`, and if they don't belong to the test folder, make sure they look exactly as the ones on GitHub, then try to pull again
+> **N.B:** if the pull command doesn't work, it's probably because you edited some files you shouldn't touch 🛑 Check which ones under `Changed files or folders`, and if they don't belong to the `test` folder, make them look exactly as the ones [on GitHub](https://github.com/lewagonlisbon/programming4everybody), then try to click `Pull` again
 
 ### Git and Ruby
 
@@ -37,6 +38,7 @@ After a session ends, switch to the `Version Control` tab and click `Pull` to ge
 - a GitHub profile
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed (type `git --version` in your terminal, it should give you a version >= 1.7)
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation) installed (`ruby --version` should be >= 2.2)
+- some basic knowledge of programming
 
 you can fork this repository on your computer and fetch the new changes after each session.
 
@@ -44,11 +46,11 @@ First, fork this repository to your profile.
 
 ![](https://github.com/lewagonlisbon/programming4everybody/raw/master/images/fork.png)
 
-Open your terminal and run the following commands one at a time (always read the comments! 👀):
+Then open your terminal and run the following commands one at a time (always read the comments carefully! 👀):
 
 ```sh
 # TODO: change with your github username
-GITHUB_USERNAME="gabrielecanepa"
+GITHUB_USERNAME="your-github-username"
 
 # Create a new folder where to keep your personal projects:
 [ ! -d ~/code ] && mkdir ~/code
@@ -68,7 +70,7 @@ code . # or `open -a "Visual Studio Code" .`
 
 Follow the lesson in your editor and play around in the [`test`](./test) folder.
 
-> **Bonus**: if you use [Atom](https://atom.io), you can install the [Teletype package](https://teletype.atom.io/) and interact with our code during a live session! 🤓
+> **Bonus**: if you use [Atom](https://atom.io), you can install the [Teletype package](https://teletype.atom.io/) and interact with our code when you ask for a live help! 🤓
 >
 > ![](https://blog.atom.io/img/posts/teletype/code-together.gif)
 
@@ -101,13 +103,13 @@ Our program has 10 lessons, following [Codecademy’s free Ruby track](https://w
 
 For each session, a private link to the Zoom meeting will be shared on the Slack main channel before the beginning of the lesson.
 
-**N.B:** to make the lecture as interactive as possible, we ask you to share your screen with the rest of the participants for **no more than 2 minutes** per session, excluding any extra presentation 🙋🏼‍♀️🙋🏽‍♂️The Zoom meetings and Slack workspace are **private**, and only authorised participants can access them.
+**N.B:** to keep the course as interactive as possible, if you share your screen with the rest of the partecipant, we ask you to do it for **no more than 2 minutes** per session, excluding any eventual extra presentation 🙋🏼‍♀️🙋🏽‍♂️The Zoom meetings and Slack workspace are **private**, and only authorised participants can access them.
 
 ## Going further
 
-Can't wait to know more about programming? **[Apply to Le Wagon](http://www.lewagon.com/lisbon/apply)** and learn how to build the app of your dreams with us 🚀
+Can't wait to know more about programming? **[Apply to Le Wagon](http://www.lewagon.com/lisbon/apply)**, and learn how to build the app of your dreams with us! 🚀
 
-By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our bootcamp manager](https://programming4everybody.slack.com/archives/C0110B1M057/p1586270434306700).
+By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our bootcamp manager Fernando](https://programming4everybody.slack.com/archives/C0110B1M057/p1586270434306700).
 
 You can also follow us on [Facebook](https://www.facebook.com/lewagonlisbon), [Instagram](https://www.instagram.com/lewagonlisbon), [Meetup](https://www.meetup.com/Le-Wagon-Lisbon-Coding-Station), and stay involved with our amazing community 🤩
 
