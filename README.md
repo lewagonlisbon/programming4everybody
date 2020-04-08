@@ -4,7 +4,7 @@ This repository contains all the files you'll see during the live sessions of th
 
 Please star the repository, or just bookmark the page in your favourite browser.
 
-**IMPORTANT**: every tool you see during a live session is **extra**, **free to use**, and __**OPTIONAL**__. These applications are used by thousands of startups around the world (including Le Wagon), and we'll do the same just to show you how to work in a real developer environment.
+**IMPORTANT**: every tool you see during a live session is **extra**, **free to use**, and __**OPTIONAL**__. These applications are used by thousands of startups around the world (including Le Wagon), and we'll do the same just to show you how to work in a real development environment.
 If you don’t have any prior experience, or you don’t even know how to use an online REPL, please just watch the video session, ask your questions at the end of the lesson, and don’t do anything else described here. As explained during the program presentation, this course is just an extension of the [Codecademy Ruby track](https://www.codecademy.com/learn/learn-ruby), and you are not required to do anything more than following the meetings!
 
 ## Usage
@@ -61,6 +61,7 @@ cd ~/code/$GITHUB_USERNAME
 git clone https://github.com/$GITHUB_USERNAME/programming4everybody.git
 cd programming4everybody
 git remote add upstream https://github.com/lewagonlisbon/programming4everybody.git
+git pull -f upstream master
 
 # Open the repository with your favourite editor:
 atom . # or `open -a Atom .`
@@ -79,6 +80,8 @@ After each session, get the latest updates with:
 ```sh
 git pull -f upstream master
 ```
+
+> In case you messed up your Git configuration, and the previous command returns an error like `Pulling is not possible because you have unmerged files`, just delete your local folder `programming4everybody`, then run the block of code above again ☝️
 
 ## General overview
 
@@ -101,7 +104,7 @@ Our program has 10 lessons, following [Codecademy’s free Ruby track](https://w
 - _13h25-13h45_ (GMT+1) **Q&A session** where you'll be able to ask the teachers any question you might have and share your screen with them for a live help
 - _13h45-?_ **Keep coding!** Use the [Slack channel](https://programming4everybody.slack.com) to find a buddy and work with him, interact with other classmates, or just send a funny gif 🙈
 
-For each session, a private link to the Zoom meeting will be shared on the Slack main channel before the beginning of the lesson.
+For each session, a private link to the Zoom meeting will be shared on the course Slack channel before the beginning of the lesson.
 
 **N.B:** to keep the course as interactive as possible, if you share your screen with the rest of the partecipant, we ask you to do it for **no more than 2 minutes** per session, excluding any eventual extra presentation 🙋🏼‍♀️🙋🏽‍♂️The Zoom meetings and Slack workspace are **private**, and only authorised participants can access them.
 
