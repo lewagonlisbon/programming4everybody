@@ -4,8 +4,10 @@ This repository contains all the files you'll see during the live sessions of th
 
 Please star the repository, or just bookmark the page in your favourite browser.
 
-**IMPORTANT**: every tool you see during a live session is **extra**, **free to use**, and __**OPTIONAL**__. These applications are used by thousands of startups around the world (including Le Wagon), and we'll do the same just to show you how to work in a real development environment.
-If you don’t have any prior experience, or you don’t even know how to use an online REPL, please just watch the video session, ask your questions at the end of the lesson, and don’t do anything else described here. As explained during the program presentation, this course is just an extension of the [Codecademy Ruby track](https://www.codecademy.com/learn/learn-ruby), and you are not required to do anything more than following the meetings!
+### ⚠️ IMPORTANT
+
+Any tool other than Codecademy that you see a teacher using in a live session is **free to use** and __**OPTIONAL**__ for this course. The applications you'll see are used by thousands of startups around the world (including Le Wagon!), and we'll use them just to show you how to work in a real development environment.
+If you don’t have any prior experience, or you don’t know how to use an online REPL, please just watch the video session, ask your questions at the end of the lesson, and don’t do anything else described here. As explained during the program presentation, this course is just an extension of the [Codecademy Ruby track](https://www.codecademy.com/learn/learn-ruby), and you are not required to do anything more than following the meetings!
 
 ## Usage
 
@@ -15,7 +17,9 @@ You will also find a [`test`](./test) folder in your repository. **Don't edit or
 
 ## Setup
 
-**N.B:** This is an online learning series, and our teachers won't be able to help you with your computer configuration. If you are just moving your first steps (you don't know Git, Ruby, what a terminal is, or any of the tools we are using), please [just watch the video](#welcome) or [use a REPL](#repl)! Do you want to learn how to configure your computer like a pro? [Do it with us](#going-further)!
+**N.B:** This is an online learning series, and our teachers won't be able to help you with your computer configuration.
+If you are just moving your first steps (you don't know Git, Ruby, what a terminal is, or any of the tools we are using), please [just watch the video](#welcome) or [use a REPL](#repl)!
+Do you want to learn how to configure your computer like a pro? [Do it with us](#going-further)!
 
 ### REPL
 
@@ -29,7 +33,7 @@ After a session ends, switch to the `Version Control` tab and click `Pull` to ge
 
 ![](https://github.com/lewagonlisbon/programming4everybody/raw/master/images/repl2.png)
 
-> **N.B:** if the pull command doesn't work, it's probably because you edited some files you shouldn't touch 🛑 Check which ones under `Changed files or folders`, and if they don't belong to the `test` folder, make them look exactly as the ones [on GitHub](https://github.com/lewagonlisbon/programming4everybody), then try to click `Pull` again
+**N.B:** if the pull command doesn't work, it's probably because you edited some files you shouldn't touch 🛑 Check which ones under `Changed files or folders`, and if they don't belong to the `test` folder, make them look exactly as the ones on GitHub, then click `Pull` again.
 
 ### Git and Ruby
 
@@ -46,7 +50,7 @@ First, fork this repository to your profile.
 
 ![](https://github.com/lewagonlisbon/programming4everybody/raw/master/images/fork.png)
 
-Then open your terminal and run the following commands one at a time (always read the comments carefully! 👀):
+Then open your terminal and run the following commands one at a time (always read the comments carefully, they're there for a reason! 👀):
 
 ```sh
 # TODO: change with your github username
@@ -57,31 +61,33 @@ GITHUB_USERNAME="your-github-username"
 [ ! -d ~/code/$GITHUB_USERNAME ] && mkdir ~/code/$GITHUB_USERNAME
 cd ~/code/$GITHUB_USERNAME
 
-# Clone the repository and add the upstream (run JUST ONCE):
+# Clone the repository from github and connect to @lewagonlisbon's one (run JUST ONCE):
 git clone https://github.com/$GITHUB_USERNAME/programming4everybody.git
 cd programming4everybody
 git remote add upstream https://github.com/lewagonlisbon/programming4everybody.git
-git pull -f upstream master
+git fetch --all
+git reset --hard upstream/master
 
-# Open the repository with your favourite editor:
+# Open the repository in your favourite editor:
 atom . # or `open -a Atom .`
 subl . # or `open -a "Sublime Text" .`
 code . # or `open -a "Visual Studio Code" .`
 ```
 
-Follow the lesson in your editor and play around in the [`test`](./test) folder.
-
-> **Bonus**: if you use [Atom](https://atom.io), you can install the [Teletype package](https://teletype.atom.io/) and interact with our code when you ask for a live help! 🤓
->
-> ![](https://blog.atom.io/img/posts/teletype/code-together.gif)
+Check the sessions code in your editor and play around in the [`test`](./test) folder.
 
 After each session, get the latest updates with:
 
 ```sh
-git pull -f upstream master
+git fetch --all
+git reset --hard upstream/master
 ```
 
-> In case you messed up your Git configuration, and the previous command returns an error like `Pulling is not possible because you have unmerged files`, just delete your local folder `programming4everybody`, then run the block of code above again ☝️
+In case you messed up your Git configuration or files, and the previous command returns an error like `Pulling is not possible because you have unmerged files`, just delete your local `programming4everybody` folder, then run the other block of code again ☝️
+
+> **Bonus**: if you use [Atom](https://atom.io), you can install the [Teletype package](https://teletype.atom.io) and interact with our code when you ask for a live help! 🤓
+>
+> ![](https://blog.atom.io/img/posts/teletype/code-together.gif)
 
 ## General overview
 
@@ -114,6 +120,6 @@ Can't wait to know more about programming? **[Apply to Le Wagon](http://www.lewa
 
 By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our bootcamp manager Fernando](https://programming4everybody.slack.com/archives/C0110B1M057/p1586270434306700).
 
-You can also follow us on [Facebook](https://www.facebook.com/lewagonlisbon), [Instagram](https://www.instagram.com/lewagonlisbon), [Meetup](https://www.meetup.com/Le-Wagon-Lisbon-Coding-Station), and stay involved with our amazing community 🤩
+You can also follow us on [Facebook](https://www.facebook.com/lewagonlisbon), [Instagram](https://www.instagram.com/lewagonlisbon), or [Meetup](https://www.meetup.com/Le-Wagon-Lisbon-Coding-Station), and get involved in our amazing community 🤩
 
 ![](https://github.com/lewagonlisbon/programming4everybody/raw/master/images/lisbon.jpg)
