@@ -118,7 +118,7 @@ For each session, a private link to the Zoom meeting will be shared on the cours
 
 Can't wait to know more about programming? **[Apply to Le Wagon](http://www.lewagon.com/lisbon/apply)**, and learn how to build the app of your dreams with us! 🚀
 
-By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our bootcamp manager Fernando](https://programming4everybody.slack.com/archives/C0110B1M057/p1586270434306700).
+By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our bootcamp manager Fernando](https://app.slack.com/client/T0110B1KQP3/D011C474D2P/user_profile/U011PACG01W).
 
 You can also follow us on [Facebook](https://www.facebook.com/lewagonlisbon), [Instagram](https://www.instagram.com/lewagonlisbon), or [Meetup](https://www.meetup.com/Le-Wagon-Lisbon-Coding-Station), and get involved in our amazing community 🤩
 
