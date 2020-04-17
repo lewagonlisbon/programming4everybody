@@ -4,9 +4,9 @@ This repository contains all the files you'll see during the webinars of the cou
 
 #### ⚠️ IMPORTANT
 
-Any tool you see a teacher using during a live session is **free to use** and **optional** to this course. The applications we'll present are used by thousands of successful tech companies around the world (including us!), and we'll utilize them to show you how to work in a real development environment.
+Any tool you see a teacher using during a live session is **free to use** and **optional** to this course. The applications we'll present are used by thousands of successful tech companies around the world (including us!), and we'll utilise them to show you how to work in a real development environment.
 
-If you don’t have any prior experience, please just follow the session, ask your eventual questions at the end of it, write and share your experience with your classmates on [the Slack channel](slack://user?team=T0110B1KQP3), and **don’t do anything else described here**. As explained during the program presentation, this course is just an extension of the [Codecademy Ruby track](https://www.codecademy.com/learn/learn-ruby), and you are not required to do anything more than following the meetings.
+If you don’t have any prior experience, please just follow the session, ask your eventual questions at the end of it, write and share your experience with your classmates on [the Slack workspace](https://programming4everybody.slack.com), and **don’t do anything else described here**. As explained during the program presentation, this course is just an extension of the [Codecademy Ruby track](https://www.codecademy.com/learn/learn-ruby), and you are not required to do anything more than following the meetings.
 
 ## Table of contents
 
@@ -24,7 +24,7 @@ Please star the repository, or just bookmark the page in your favourite browser.
 
 Each Ruby file you see in this repository will be filled by a teacher during the corresponding session. In the [`slides`](https://github.com/lewagonlisbon/programming4everybody/tree/master/slides) folder you can see and download the slides we share during our lessons.
 
-You'll also find a [`test`](https://github.com/lewagonlisbon/programming4everybody/tree/master/test) folder in this repository. **Don't edit or delete any file outside this folder**: it's important to always keep your personal experiments in a separate place! 🧪
+You'll also find a `test` folder in this repository. **Don't edit or delete any file outside this folder**: it's important to always keep your personal experiments in a separate place! 🧪
 
 ## Setup
 
@@ -34,7 +34,7 @@ You'll also find a [`test`](https://github.com/lewagonlisbon/programming4everybo
 
 You can use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) to see and interact with the code we share every session.
 
-First, [create an account on Repl.it](https://repl.it/signup). Once logged-in, come back here and click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody), then click `fork` to save a copy of this repository in your personal REPLs collection.
+First, [create an account on Repl.it](https://repl.it/signup). Once logged-in, come back here and click this button 👉 [![Run on Repl.it](https://repl.it/badge/github/lewagonlisbon/programming4everybody)](https://repl.it/@lewagonlisbon/programming4everybody) to open this repository there, then click `fork` to save a copy in your personal REPLs collection.
 
 ![](https://github.com/lewagonlisbon/programming4everybody/raw/master/images/repl1.png)
 
@@ -112,19 +112,19 @@ Our program has 10 lessons, following [Codecademy’s free Ruby track](https://w
 1. [`Introduction to Ruby`](https://github.com/lewagonlisbon/programming4everybody/blob/master/01_introduction.rb) Wednesday, April 8th
 2. [`Control flow in Ruby`](https://github.com/lewagonlisbon/programming4everybody/blob/master/02_control_flow.rb) Friday, April 10th
 3. [`Looping with Ruby`](https://github.com/lewagonlisbon/programming4everybody/blob/master/03_looping.rb) Monday, April 13th
-4. [`Arrays and Hashes`](https://github.com/lewagonlisbon/programming4everybody/blob/master/04_arrays_and_hases.rb) Wednesday, April 15th
-5. [`Blocks and Sorting`](https://github.com/lewagonlisbon/programming4everybody/blob/master/05_blocks.rb) Friday, April 17th
+4. [`Arrays and Hashes`](https://github.com/lewagonlisbon/programming4everybody/blob/master/04_arrays_and_hashes.rb) Wednesday, April 15th
+5. [`Blocks and Sorting`](https://github.com/lewagonlisbon/programming4everybody/blob/master/05_methods_and_blocks.rb) Friday, April 17th
 6. [`Hashes and Symbols`](https://github.com/lewagonlisbon/programming4everybody/blob/master/06_hashes_and_symbols.rb) Monday, April 20th
 7. [`Refactoring`](https://github.com/lewagonlisbon/programming4everybody/blob/master/07_refractoring.rb) Wednesday, April 22nd
 8. [`Procs and Lambdas`](https://github.com/lewagonlisbon/programming4everybody/blob/master/08_procks_and_lambdas.rb) Friday, April 24th
-9. [`Object-Oriented Programming, Part 1`](https://github.com/lewagonlisbon/blob/master/programming4everybody/09_oop.rb) Monday, April 27th
-10. [`Object-Oriented Programming, Part 2`](https://github.com/lewagonlisbon/blob/master/programming4everybody/10_oop.rb) Wednesday, April 29th
+9. [`Object-Oriented Programming, Part 1`](https://github.com/lewagonlisbon/programming4everybody/blob/master/09_oop.rb) Monday, April 27th
+10. [`Object-Oriented Programming, Part 2`](https://github.com/lewagonlisbon/programming4everybody/blob/master/10_oop.rb) Wednesday, April 29th
 
 ## Typical session
 
 - _13h00-13h25_ (GMT+1) **Live session** on [Livestorm](https://app.livestorm.co/le-wagon-portugal) with Le Wagon's teachers showing lots of live-demos to help you understand the concepts using practical examples
 - _13h25-13h45_ **Q&A session** where you'll be able to ask the teachers any question you might have and share your screen with them for a live help
-- _13h45-?_ **Keep coding!** Use [the Slack channel](https://programming4everybody.slack.com) to find a buddy and work with him, interact with other classmates, or just send a funny gif 🙈
+- _13h45-?_ **Keep coding!** Use [the Slack workspace](https://programming4everybody.slack.com) to find a buddy and work with him, interact with other classmates, or just send a funny gif 🙈
 
 For each session, a private link to the meeting will be shared on the course Slack channel. The Livestorm meetings and Slack workspace are **private**, and only authorised participants can access them 🔒
 
@@ -134,7 +134,7 @@ For each session, a private link to the meeting will be shared on the course Sla
 
 Can't wait to know more about programming? **[Apply to Le Wagon](http://www.lewagon.com/lisbon/apply)**, and learn how to build the app of your dreams with us! 🚀
 
-By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our admissions manager Fernando](slack://user?team=T0110B1KQP3&id=U011PACG01W).
+By completing this course, **you get a special 10% off the next Lisbon course tuition**, and you can combine this discount with any other active scholarship! 🇵🇹 Applications are open for our next batches, check out the dates on our website and [get in touch with our admissions manager Fernando](https://app.slack.com/client/T0110B1KQP3/D011C474D2P).
 
 You can also follow us on [Meetup](https://www.meetup.com/Le-Wagon-Lisbon-Coding-Station), [Facebook](https://www.facebook.com/lewagonlisbon) and [Instagram](https://www.instagram.com/lewagonlisbon), and stay involved in our amazing community 🤩
 
