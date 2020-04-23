@@ -115,8 +115,8 @@ Our program has 10 lessons, following [Codecademy’s free Ruby track](https://w
 4. [`Arrays and Hashes`](https://github.com/lewagonlisbon/programming4everybody/blob/master/04_arrays_and_hashes.rb) Wednesday, April 15th
 5. [`Blocks and Sorting`](https://github.com/lewagonlisbon/programming4everybody/blob/master/05_methods_and_blocks.rb) Friday, April 17th
 6. [`Hashes and Symbols`](https://github.com/lewagonlisbon/programming4everybody/blob/master/06_hashes_and_symbols.rb) Monday, April 20th
-7. [`Refactoring`](https://github.com/lewagonlisbon/programming4everybody/blob/master/07_refractoring.rb) Wednesday, April 22nd
-8. [`Procs and Lambdas`](https://github.com/lewagonlisbon/programming4everybody/blob/master/08_procks_and_lambdas.rb) Friday, April 24th
+7. [`Refactoring`](https://github.com/lewagonlisbon/programming4everybody/blob/master/07_refactoring.rb) Wednesday, April 22nd
+8. [`Procs and Lambdas`](https://github.com/lewagonlisbon/programming4everybody/blob/master/08_procs_and_lambdas.rb) Friday, April 24th
 9. [`Object-Oriented Programming, Part 1`](https://github.com/lewagonlisbon/programming4everybody/blob/master/09_oop.rb) Monday, April 27th
 10. [`Object-Oriented Programming, Part 2`](https://github.com/lewagonlisbon/programming4everybody/blob/master/10_oop.rb) Wednesday, April 29th
 

@@ -62,7 +62,7 @@ names.each do |name|
   puts name.to_sym
 end
 
-# Let's refractor the beatles!
+# Let's refactor the beatles!
 
 # Create
 beatles = {

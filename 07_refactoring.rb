@@ -161,4 +161,4 @@ puts "My name reversed is #{name.reverse}"
 
 # `times`
 # use it to repeating something n times
-3.times { puts "I'm a refractoring master!" }
+3.times { puts "I'm a refactoring master!" }
