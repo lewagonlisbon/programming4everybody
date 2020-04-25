@@ -3,7 +3,7 @@
 names = ["mariana", "gabriele", "shannon"]
 
 names.each do |name|
-  # Everything inside here is the *block*!
+  # Everything inside here is a *block*!
   reversed_name = name.reverse
   puts reversed_name.upcase
 end
@@ -55,7 +55,7 @@ def print_welcome_message(teacher_name)
   yield(teacher_name) if block_given?
 end
 
-print_welcome_message("gabriele") do |name| # here I have the same variable ("gabriele") available as a parameter (I called it `name`, but it's arbitrary)!
+print_welcome_message("gabriele") do |name| # here I have the same variable ("gabriele") available as a parameter (called `name`, but it's arbitrary)!
   puts "Today's teacher is #{name.upcase}"
 end
 
@@ -84,33 +84,34 @@ today_lecture.call
 
 numbers = (1..100).to_a
 
-numbers.each { |n| puts n if n.even? } # this block could be reused, let's make it a proc!
-# will become
+numbers.each { |n| puts n if n.even? }
+# The block above could be reused, let's make it a proc!
 print_if_even = Proc.new { |n| puts n if n.even? }
 numbers.each(&print_if_even)
 
 #############################
 
 # *Procs and symbols*
-# In Ruby, we can pass a method name (name, not the whole method!) with a symbol
+# In Ruby, we can pass a method name (*name*, not the whole method!) with a symbol
 # This symbol can be easily turned into a proc!
 
 names = ["mariana", "gabriele"]
-names.map! { |name| name.upcase } # let's make `upcase` a proc
-names.map!(&:upcase)
+names.map! { |name| name.upcase }
+# We can refer to the `upcase` method with a symbol (`:upcase`), and convert it to a proc by adding a `&` before
+names.map!(&:upcase) # note the colon, we are passing a symbol here!
 puts names
 
 #############################
 
 # *Lambdas*
-# Same as procs, except for some small differences
+# Same as procs, except for (mainly 2) small differences
 
 def print_welcome_message
   puts "Welcome to today's lesson!"
   yield if block_given?
 end
 
-today_lecture = lambda do # just a different keyword!
+today_lecture = lambda do # just a different keyword, it does the same!
   puts "Today's teachers are Mariana and Gabriele"
   puts "We'll talk about procs and lambdas!"
 end
@@ -126,9 +127,9 @@ my_proc.call
 my_lambda = lambda { |x, y| puts "I will return an error if you don't give me the right arguments! 🤬" }
 my_lambda.call # => 'wrong number of arguments' error! I should pass 2 arguments, x and y
 
-# 2. When they return, lambas don't interrupt the execution of a method after the `call`, procs do
+# 2. When they return inside a method, lambas don't interrupt the execution of the function after the `call`, procs do
 def lambda_method
-  my_lambda = lambda { return "Call me, and then do other stuff :)" }
+  my_lambda = lambda { return "Call me, but if you do other stuff after that, I won't be returned :(" }
   my_lambda.call # it doesn't stop here!
   "You just called the lambda, but I'm not a lambda!"
 end
@@ -150,7 +151,7 @@ puts proc_method
 
 students_grades = [10, 15, 5, 4, 19, 14, 2, 7, 13]
 
-under_10 = Proc.new { |grade| grade < 10 } # I could use a lambda, it would be the same!
+under_10 = Proc.new { |grade| grade < 10 } # I could use a lambda here, it would be the same!
 
 low_grades = students_grades.select(&under_10)
 puts low_grades
@@ -159,7 +160,7 @@ puts low_grades
 
 names = ["mariana", :gabriele, "shannon"]
 
-filter_symbols = lambda { |x| x.is_a? Symbol } # I could use a proc, it would be the same!
+filter_symbols = lambda { |x| x.is_a? Symbol } # I could use a proc here, it would be the same!
 
 symbols = names.select(&symbol_filter)
 puts symbols
