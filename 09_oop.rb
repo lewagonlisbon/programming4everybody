@@ -1,11 +1,13 @@
-# **OOP** Object-Oriented Programming
+# OOP Object-Oriented Programming
 
-# Ruby is an *object-oriented language*
+# Ruby is an object-oriented language
 # As any other OOP language, it uses *objects* to store *attributes* and *methods* to store *behaviours*
 
 # ATTRIBUTES = `Class`es (objects = data)
 # +
 # BEHAVIOURS = `method`s (functions = actions to create/read/update/delete data)
+
+# 1. Attributes
 
 "Hello!".length # => I apply the method length on a string, and it returns the attribute `6` of type `Integer`
 4.even? # => returns `true`, an attribute of type `TrueClass` (a method with a question mark returns a boolean, it's convention! check https://rubyonrails.org/doctrine/#convention-over-configuration)
@@ -24,87 +26,85 @@ teachers = [ # => returns the variable `teachers`: an `Array` with inside two `H
   }
 ]
 
-get_flags = ->(teacher) { teacher[:country] } # another way to assign a `Proc`, a.k.a block of code contained in `do end` or `{ }`)
-# Old way: get_flag = Proc.new { |teacher| teacher[:country] }
+get_flags = Proc.new { |teacher| teacher[:country] }
+get_flags = ->(teacher) { teacher[:country] } # another faster way to assign a `Proc`, a.k.a block of code contained in `do end` or `{ }`
 
-# Let's pass the `Proc` to a method
-# The most common are `:map` (returns the values) and `each` returns an `Array` with 2 `String`s
-# `:map`
+# 2. Behaviours
+
+# Let's pass the proc to a method
+# The most common methods for a collection:
+# - :map  -> returns the values
+# - :each -> return always nil, but it can execute some other methods (actions) while looping
+
+puts teachers.each(&get_flags) # => nil, but I see it in the console
 flags = teachers.map(&get_flags) # => ["🇵🇹", "🇮🇹"]
 
-def get_italian_flag(array) # define a method
-  get_italian_flag = ->(element) { element[:country] = "🇮🇹" }.first # Proc -> block of code to use with another method
-  array.map(&get_italian_flag) # pass the `Proc` to the filter method, and return (implicit) the "🇮🇹" string
+# Custom method
+def get_italian_flag(array)
+  get_italian_flags = ->(element) { element[:country] = "🇮🇹" } # another proc/lambda
+  array.filter(&get_italian_flags).first # pass the proc to the filter method, and return (implicitly!) the "🇮🇹" string
 end
 
-italian_flag = get_italian_flag(teachers) # call the method
-
-puts italian_flag # returns `nil` (`NilClass`) and sends the attribute to the console
+italian_flag = get_italian_flag(teachers) # call the method and get the string
+puts italian_flag # => nil
 
 #####################################
 
-# ClassName        # => mold
-# class_instance   # => cake
+# Classes
 
-# I could initialize any attribute with AttributeClass.new, the way we write them "text inside string", 1993 3.14 (number), true false (booleans), [1, 2] {a: 1, b: 2} (collections), it's just a CONVENTION
+# Syntax:
+# - ClassName    => the 'mold'
+# - class_object => the 'cake'
 
-# general expression to keep/collect parameters, like in math
-()
+# I can initialize any object (and 'label' it with a variable) with ObjectClassName.new, except for booleans and numbers (it's too intuitive!)
+[true, false] # booleans = [TrueClass, FalseClass]
+[1993, 3.14]  # numbers  = [Integer, Float]
+"hello there" # String.new("hello there")
+[]            # Array.new
+{}            # Hash.new
+->(param) {}  # blocks = [Proc.new { |param| }, lambda { |param| }]
 
-# strings
-String.new
-"hello"
+# There are a lot of pre-defined, let's print them all!
+puts ObjectSpace.each_object(Class) { |object| puts object }
 
-# numbers
-1993
-3.14
+# Store the welcome file here! ;)
+welcome_file = File.new("test/welcome.rb")
 
-# booleans
-true
-false
-
-# collections
-[ ]
-{ }
-
-# proc (nameless method/blocks of code)
-->(param) { } # just convention!
-
-# method: **Method.new does not exist** because it's a behaviour and not an attrbute
-def a_method
+# Methods
+# Method.new does not exist because it's a *behaviour* and not an attrbute
+def say_hello
+  puts "hello"
 end
 
-# variables to assign all of this
-name = "gabriele"
+def return_hello
+  puts "I'm another string"
+  "hello" # implicit return
+end
+
+hello_string = return_hello
+puts hello_string
 
 #####################################
 
-# **Classes**
+# *Classes*
 
+# What if I want my own class with its own attributes and the behaviours I want?
+
+# Syntax:
 # ClassName                            # => mold
 # instance = ClassName.new(attributes) # => cake, one unit of that class
-# LeWagonTeacher(...) # => mold
-# Mariana             # => cake
 
-class LeWagonTeacher
-  def initialize(name, age)
-    # ATTRIBUTES
-    # instance variables = data I want to keep
-    @name = name.capitalize
-    @age = age
-  end
+# Place it in one file with the same name (you need to convert UpperCamelCase syntax to lower_snake_case)
+require_relative "test/teacher.rb" # require is reserved for gems (what is a gem?) and file systems, so we need to do it relatively to where we are
 
-  def age
-    @age # without the `return`!
-  end
-
-  # BEHAVIOURS
-  def say_hello
-    "Hello guys! I'm #{@name}, and I am #{@age} years old"
-  end
-end
-
-gabriele = LeWagonTeacher.new("gabriele", 27)
-my_age = gabriele.age
-mariana.say_hello
-puts "In 3 years I will be: #{my_age + 3}"
+attributes = {
+  name: "gabriele",
+  age: 26,
+  country: "italy"
+}
+gabriele = Teacher.new(attributes)
+mariana  = Teacher.new(name: "mariana", country: "portugal")
+print_teacher_welcome_message = ->(teacher) { puts teacher.welcome_message }
+[gabriele, mariana].each(&print_teacher_welcome_message)
+gabriele.birthday
+puts gabriele.age # => 27
