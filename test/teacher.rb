@@ -22,7 +22,7 @@ class Teacher
 
   # Update the @age attribute
   def birthday
+    puts "Today it's #{@name}'s birthday! 🎉"
     @age += 1 # behaviour/action that modifies the age attribute!
-    puts "Today is #{@name} turns #{@age}, happy birthday! 🎉"
   end
 end
